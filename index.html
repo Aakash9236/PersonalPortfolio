@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#home" class="logo">My Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personal-info">About</a></li>
+            <li><a href="#technical-skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+        <!-- Dark/Light Mode Toggle -->
+        <div class="theme-toggle">
+            <button id="toggle-theme" aria-label="Toggle Theme">🌙</button>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Aakash Kumar Gupta</span></h1>
+            <p>A passionate developer who loves building amazing web and mobile experiences.</p>
+            <a href="#personal-info" class="btn">Learn More</a>
+        </div>
+    </section>
+
+   <!-- Personal Information Section -->
+<section id="personal-info" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="C:\Users\DELL\OneDrive\Desktop\JavaScript\portfolio\MyPhoto.jpg" alt="Profile Picture" class="profile-img">
+            <div class="about-text">
+                <p><strong>Name:</strong> Aakash Kumar Gupta</p>
+                <p><strong>Email:</strong> guptaakash9236@gmail.com</p>
+                <p><strong>Phone:</strong> +91-9236556807</p>
+                <p><strong>Location:</strong> Greater Noida, U.P</p>
+                <p>I am a passionate developer specializing in Android development and web technologies. I enjoy crafting scalable, responsive applications and solving complex problems using innovative approaches. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Skills Section -->
+<section id="technical-skills" class="section">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-android"></i>
+                <p>Kotlin</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-cloud"></i>
+                <p>Firebase</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <p>XML</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Food Recipe Application</h3>
+                    <p>Designed a user-friendly interface using RecyclerView, CardView, and intuitive navigation components.</p>
+                    <a href="https://github.com/Aakash9236" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Contact Management System</h3>
+                    <p>Android app to manage contact info with features like adding, deleting, and updating contacts.</p>
+                    <a href="https://github.com/Aakash9236/ContactManagementApp.git" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Cryptocurrency Rate Application</h3>
+                    <p>Real-time cryptocurrency rates using a public API and interactive UI with CardView & RecyclerView.</p>
+                    <a href="https://github.com/Aakash9236" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Education Section -->
+<section id="education" class="section">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>B-Tech in Computer Science</h3>
+                <p><strong>Dronacharya Group Of Institutions, Greater Noida</strong></p>
+                <p>Oct 2021 – Jul 2025</p>
+                <p>SGPA: <span class="highlight">7.64/10.0</span></p>
+            </div>
+            <div class="education-card">
+                <h3>Intermediate</h3>
+                <p><strong>Murari Inter College, Gorakhpur</strong></p>
+                <p>Apr 2018 – Jul 2019</p>
+                <p>Percentage: <span class="highlight">76.8%</span></p>
+            </div>
+            <div class="education-card">
+                <h3>High School</h3>
+                <p><strong>S R B S M H S School, Gorakhpur</strong></p>
+                <p>Apr 2016 – Jul 2017</p>
+                <p>Percentage: <span class="highlight">84.83%</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Me Section with Footer -->
+<section id="contact-me" class="contact-footer-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to work with me, feel free to get in touch!</p>
+        <form
+  action="https://formspree.io/f/mrbeqndw"
+  method="POST"
+  class="contact-form"
+>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Aakash Kumar Gupta. All rights reserved.</p>
+            <p> Thank You so much for visiting. </p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/aakash-kumar-gupta-720090230"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Aakash9236"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/aakash_sanatani9236"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
